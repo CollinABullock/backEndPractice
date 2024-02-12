@@ -1,8 +1,12 @@
+[
 {
   "name": "Johnny Cool Guy",
   "gender": "Male",
   "Net Worth": 100000000000
 },
 {
-  
+  "name": "Jenny Bad Chick",
+  "gender": "Female",
+  "Net Worth": 400000000000
 }
+]
