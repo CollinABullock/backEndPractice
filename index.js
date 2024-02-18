@@ -13,6 +13,16 @@ app.get("/apiData", (req, res) => {
   res.send (importData)
 })
 
+app.post("/apiData", (req, res) => {
+  // Assuming req.body contains the data for the new item
+  const newItem = req.body;
+  // Perform operations to save the new item
+  // For example, you can push the new item to the importData array
+  importData.push(newItem);
+  // Send a response indicating success
+  res.status(201).json({ message: "Item created successfully", item: newItem });
+});
+
 app.listen(port, () => {
   console.log("This app is listen on port ${3000}");
 })
